@@ -1,0 +1,127 @@
+.header {
+    padding: 10px 10px;
+    background-color: #050412;
+    position: fixed;
+    top: 0;
+    @media (min-width:768px){
+        z-index: 999;
+    }    
+}
+.hedaer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 999;
+}
+.header__logo{
+    z-index: 3;
+}
+.nav{
+    transition: all 0.7s;
+    @media (max-width:768px) {
+        top: -30px;
+        left: -760px;
+        position: absolute;
+        width: 100vw;
+        height: 200vh;
+        background-color: #050412;
+        
+    }
+    &.visible{
+        top: 0px;
+        left: 10px;
+    }
+}
+.nav__list {
+    display: flex;
+    gap: 70px;
+    
+    @media (max-width:768px) {
+        display: block;
+        margin-top: 70px;
+        justify-content: flex-start;
+        
+    }
+}
+.nav__item {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+    color: #FFFFFF;
+    @media (max-width:768px) {
+        padding-left: 0px;
+        margin-top: 20px;
+        color: white;
+        text-align: start;
+    }
+    
+}
+.nav--link {
+    color: #FFFFFF;
+    @media (max-width:768px) {
+        color: white;
+    }
+    transition: 0.3s;
+}
+
+.header--btn {
+    font-weight: 350;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.header--underline {
+    display: block;
+    height: 2px;
+    background: linear-gradient(90.52deg, #22A1FF -15.53%, #CA1FFF 54.35%, #FFE101 117.36%);
+    width: 171px;
+}
+
+// Media header
+
+.header__burger {
+    display: none;
+    @media (max-width:768px) {
+        display: block;
+    }
+    span{
+        display: block;
+    }
+    cursor: pointer;
+    z-index: 99999;
+    &.active{
+        .left--stick {
+            rotate: 45deg;
+            transition: all 0.7s;
+        }
+        .right--stick {
+            rotate: 135deg;
+            margin-top: -3px;
+            transition: all 0.7s;
+        }
+        .third--stick{
+            visibility: hidden;
+            opacity: 0;
+        }
+    }
+}
+.left--stick{
+    transition: all 0.7s;
+}
+.stick {
+    height: 3px;
+    width: 35px;
+    background-color: white;
+    
+}
+.right--stick {
+    margin-top: 5px;
+    transition: all 0.7s;
+}
+.third--stick{
+    margin-top: 5px;
+    transition: all 0.7s;
+}
