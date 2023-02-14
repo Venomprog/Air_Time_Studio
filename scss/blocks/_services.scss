@@ -1,0 +1,116 @@
+.section__Services {
+    color: #B1B1B1;
+    margin-top: 125px;
+}
+
+.section__content {
+}
+
+.services__title {
+}
+.main--title {
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 94px;
+    background: linear-gradient(90.52deg, #22A1FF -5.53%, #CA1FFF 4.35%, #FFE101 20.36%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.rainbow--text {
+}
+.services__desk {
+    margin-top: 10px;
+}
+.main--desk {
+    font-style: normal;
+    font-weight: 350;
+    font-size: 24px;
+    line-height: 30px;
+    color: #B1B1B1;
+}
+.services__list {
+    margin-top: 90px;
+    &__item {
+        max-height: 310px;
+    }
+    .item--row {
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+.item__img {
+    img{
+        max-width: 380px;
+        max-height: 310px;
+    }
+}
+.item__text {
+    width: 387px;
+    margin-left: 48px;
+    position: relative;
+    height: 310px;
+}
+.text__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+.text__main-text {
+    font-style: normal;
+    font-weight: 350;
+    font-size: 20px;
+    line-height: 25px;
+    color: #B1B1B1;
+}
+.text--cyber {
+    margin-top: 132px;
+}
+.text--design {
+    margin-top: 83px;
+}
+.main__text--item {
+    margin-top: 24px;
+}
+.item__button {
+    margin-left: 20px;
+    @media (min-width:1368px) {
+        margin-left: 134px;
+    }
+    a{
+        cursor: pointer;
+    }
+}
+.arrow--btn{
+    border-radius: 50%;
+    transition: all 0.6s;
+    &:hover{
+        box-shadow: 0px 0px 10px 3px white;
+    }
+}
+.item__number-text {
+    margin-left: 20px;
+    @media (min-width:1368px) {
+        margin-left: 100px;
+    }
+}
+.gray--number {
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 25px;
+    color: #1F1D31;
+}
+
+// hr tag
+
+.services--hr{
+    height: 1px;
+    border: 1px solid #2F2F2F;
+    margin-top: 110px;
+    margin-bottom: 110px;
+}

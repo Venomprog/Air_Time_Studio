@@ -1,10 +1,13 @@
 .section__hero {
     padding-top: 100px;
     z-index: -1;
-    
     @media (max-width:768px){
         padding-top: 0px;
     }
+    background-image: url('/img/back-light.png');
+    background-size: cover;
+    background-position: top -130px left 0px;
+    background-repeat: no-repeat;
 }
 
 .hero__content {
@@ -17,7 +20,7 @@
     font-size: 30px;
     line-height: 44px;
     text-align: center;
-    background: linear-gradient(90.52deg, #22A1FF 25.53%, #CA1FFF 44.35%, #FFE101 77.36%);
+    background: linear-gradient(90.52deg, #22A1FF 25.53%, #CA1FFF 50.35%, #FFE101 70.36%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -27,13 +30,13 @@
         line-height: 30px;
     }
 }
-.rainbow--text{
-    background: linear-gradient(90.52deg, #22A1FF 25.53%, #CA1FFF 44.35%, #FFE101 77.36%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+// .rainbow--text-hero{
+//     background: linear-gradient(90.52deg, #22A1FF 25.53%, #CA1FFF 44.35%, #FFE101 77.36%);
+//     -webkit-background-clip: text;
+//     -webkit-text-fill-color: transparent;
+//     background-clip: text;
+//     -webkit-text-fill-color: transparent;
+// }
 .hero__company--name {
     margin-top: 40px;
     font-family: 'Bebas Neue';
@@ -150,13 +153,28 @@
 @keyframes slider-circle{
     0%{
         bottom: 0px;
+        opacity: 1;
     }
     50%{
         bottom: 30px;
-        
+        opacity: 0.8;
+    }
+    55%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 0;
+    }
+    98%{
+        opacity: 0.5;
     }
     100%{
+        opacity: 1;
         bottom: 0px;
         
     }
 }
+
+
+
+//test
