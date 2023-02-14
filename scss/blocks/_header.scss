@@ -5,6 +5,8 @@
     top: 0;
     @media (min-width:768px){
         z-index: 999;
+        position: fixed;
+    top: 0;
     }    
 }
 .hedaer__content {
