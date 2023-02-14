@@ -27,6 +27,13 @@
         line-height: 30px;
     }
 }
+.rainbow--text{
+    background: linear-gradient(90.52deg, #22A1FF 25.53%, #CA1FFF 44.35%, #FFE101 77.36%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .hero__company--name {
     margin-top: 40px;
     font-family: 'Bebas Neue';
@@ -114,6 +121,42 @@
         img{
             width: 40px;
         }
+        
+    }
+}
+
+// Scroll-bar
+
+.slider--scroll-bar {
+    margin-top: 190px;
+}
+.slider--scroll-bar__content {
+    width: 35px;
+    height: 57px;
+    border: 1px solid #676767;
+    border-radius: 30px;
+    margin: 0 auto;
+}
+.circle {
+    padding-left: 14px;
+    padding-right: 14px;
+    position: absolute;
+    bottom: 0;
+    animation-name: slider-circle;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slider-circle{
+    0%{
+        bottom: 0px;
+    }
+    50%{
+        bottom: 30px;
+        
+    }
+    100%{
+        bottom: 0px;
         
     }
 }
