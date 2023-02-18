@@ -38,6 +38,9 @@
     .item--row {
         display: flex;
         align-items: center;
+        @media (max-width:768px){
+            flex-wrap: wrap;
+        }
     }
 }
 
@@ -46,6 +49,10 @@
     img{
         max-width: 380px;
         max-height: 310px;
+        @media (max-width:768px) {
+            width: 250px;
+            margin-left: 18px;
+        }
     }
 }
 .item__text {
@@ -53,6 +60,11 @@
     margin-left: 48px;
     position: relative;
     height: 310px;
+    @media (max-width:768px) {
+        height: 210px;
+        margin-top: 30px;
+        margin-left: 18px;
+    }
 }
 .text__title {
     font-style: normal;
@@ -60,6 +72,10 @@
     font-size: 40px;
     line-height: 30px;
     color: #FFFFFF;
+    @media (max-width:768px) {
+        font-size: 20px;
+        line-height: 22px;
+    }
 }
 .text__main-text {
     font-style: normal;
@@ -67,23 +83,42 @@
     font-size: 20px;
     line-height: 25px;
     color: #B1B1B1;
+    @media (max-width:768px) {
+        font-size: 14px;
+        line-height: 16px;
+    }
 }
 // спец отступы для текста в карточках услуг!
 .text--cyber {
     margin-top: 132px;
+    @media (max-width:768px){
+        margin-top: 32px;
+    }
 }
 .text--design {
     margin-top: 83px;
+    @media (max-width:768px){
+        margin-top: 32px;
+    }
 }
 .text--prod{
     margin-top: 157px;
+    @media (max-width:768px){
+        margin-top: 32px;
+    }
 }
 .text--mahagement{
     margin-top: 157px;
+    @media (max-width:768px){
+        margin-top: 32px;
+    }
 }
 // спец отступы для текста в карточках услуг**
 .main__text--item {
     margin-top: 24px;
+    @media (max-width:768px){
+        margin-top: 14px; 
+    }
 }
 .item__button {
     margin-left: 20px;
@@ -106,12 +141,16 @@
     @media (min-width:1368px) {
         margin-left: 100px;
     }
+    @media (max-width:768px) {
+        margin-left: 40px;
+    }
 }
 .gray--number {
     font-weight: 700;
     font-size: 96px;
     line-height: 25px;
     color: #1F1D31;
+    
 }
 
 // hr tag
@@ -122,3 +161,8 @@
     margin-top: 110px;
     margin-bottom: 110px;
 }
+
+
+
+
+
