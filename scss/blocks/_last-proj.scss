@@ -1,0 +1,115 @@
+.last-projects__section {
+    margin-top: 240px;
+    padding-bottom: 100px;
+}
+
+.last-projects__content {
+    .proj__title {
+        background: linear-gradient(90.52deg, #22A1FF -5.53%, #CA1FFF 14.35%, #FFE101 50.36%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+}
+
+.proj__row {
+    margin-top: 80px;
+    display: flex;
+    gap: 70px;
+    @media (max-width:1370px) {
+        gap: 40px;
+    }
+}
+.proj__item {
+    max-width: 570px;
+    border-radius: 10px;
+    @media (max-width:1370px) {
+        max-width: 550px;
+    }
+    .proj__img {
+        img{
+            max-width: 100%;
+            border-radius: 10px;
+        }
+    }
+    .proj__text {
+        background-color: #131225;
+        padding-left: 36px;
+        border-radius: 10px;
+        position: relative;
+        padding-bottom: 50px;
+        .text__title {
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 44px;
+            color: #B1B1B1;
+            padding-top: 40px;
+        }
+        .text__desk {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 30px;
+            color: #FFFFFF;
+            margin-top: 23px;
+        }
+        .text__btn--more {
+            position: absolute;
+            top: calc(100%/2 - 10px);
+            right: 25px;
+            cursor: pointer;
+        }
+    }
+}
+
+
+//animation
+
+
+.single-box{
+    width: 570px;
+    height: 320px;
+    perspective: 1200px;
+}
+
+.box__content{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: translateZ(-150px);
+    transition: all 1s;
+}
+.slides{
+    position: absolute;
+    width: 550px;
+    height: 320px;
+    border-radius: 20px;
+}
+
+.slide-1{
+    transform: rotateY(0deg) translateZ(150px);
+    z-index: 2;
+    background-size: cover;
+    background-position: center center;
+    transition: all 1s;
+}
+
+.slide-2{
+    transform: rotateY(90deg) translateZ(0px) translateX(-160px);
+    color: white;
+    z-index: 1;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.box:hover .box__content{
+    transform: rotateY(-90deg) translateZ(-150px);
+    .slide-1{
+        opacity: 0;
+    }
+    .slide-2{
+        opacity: 1;
+    }
+}
