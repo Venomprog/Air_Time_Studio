@@ -1,12 +1,14 @@
 .our-clients__section {
     margin-top: 240px;
+    background-image: url('/img/back-light.png');
+    background-size: cover;
+    background-size: 100% 100%;
+    background-position: top -30px left 0px;
+    background-repeat: no-repeat;
+    overflow: visible;
 }
-.container-fluid {
-}
-.our-clients__content {
-}
-.container {
-}
+
+
 .our-clients__title {
     background: linear-gradient(90.52deg, #22A1FF -5.53%, #CA1FFF 14.35%, #FFE101 35.36%);
     -webkit-background-clip: text;
@@ -14,8 +16,7 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.main--title {
-}
+
 .clients__wrapper {
     margin-top: 119px;
     display: flex;
@@ -24,8 +25,7 @@
     flex-wrap: wrap;
     justify-content: center;
 }
-.clints__item {
-}
+
 
 
 

@@ -1,17 +1,22 @@
 .connect__section {
     color: white;
-    margin-top: 240px;
+    margin-top: 30px;
+    padding-top: 50px;
+    padding-bottom: 90px;
+    background-image: url('/img/back-light.png');
+    background-size: cover;
+    background-size: 100% 100%;
+    background-position: top -30px left 0px;
+    background-repeat: no-repeat;
+    overflow: visible;
 }
-.container-fluid {
-}
+
 .connect__content {
     display: flex;
     align-items: center;
 }
-.container {
-}
-.connect__text {
-}
+
+
 .connect__title {
     font-weight: 400;
     font-size: 45px;
@@ -37,6 +42,7 @@
     padding-top: 107px;
     cursor: pointer;
     transition: all 0.3s;
+    color: white;
     &:hover{
         opacity: 0.8;
         box-shadow: 0px 0px 5px 3px white;
