@@ -1,12 +1,12 @@
 <?php
  
 // Токен
-  const TOKEN = '5879826067:AAE5sFt2zWgmbC5NMjI5OrbBGY-g7Zme_QM';
- 
+  const TOKEN = '5464325501:AAFni-m9pLQF5qT92eOQPRhLTNVbV1uAjMA';
+  //5464325501:AAFni-m9pLQF5qT92eOQPRhLTNVbV1uAjMA
   // ID чата
 
-  // Добавить новое айди : https://api.telegram.org/bot5879826067:AAE5sFt2zWgmbC5NMjI5OrbBGY-g7Zme_QM/getUpdates
-  const CHATID = '5255176999';
+  // Добавить новое айди : https://api.telegram.org/bot55464325501:AAFni-m9pLQF5qT92eOQPRhLTNVbV1uAjMA/getUpdates
+  const CHATID = '897616145';
  
   // Массив допустимых значений типа файла.
   $types = array('image/gif', 'image/png', 'image/jpeg', 'application/pdf');
@@ -22,23 +22,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $msgs = [];
    
   // Проверяем не пусты ли поля с именем и телефоном
-  if (!empty($_POST['name']) && !empty($_POST['phone']) && !empty($_POST['surname'])) {
+  if (!empty($_POST['name']) && !empty($_POST['phone']) && !empty($_POST['email']) && !empty($_POST['message'])) {
      
     // Если не пустые, то валидируем эти поля и сохраняем и добавляем в тело сообщения. Минимально для теста так:
     $txt = "";
      
     // Фамилия
-    if (isset($_POST['surname']) && !empty($_POST['surname'])) {
-      $txt .= "Фамилия пославшего: " . strip_tags(trim(urlencode($_POST['surname']))) . "%0A";
+    if (isset($_POST['email']) && !empty($_POST['email'])) {
+      $txt .= "E-mail: " . strip_tags(trim(urlencode($_POST['email']))) . "%0A";
   }
     // Имя
     if (isset($_POST['name']) && !empty($_POST['name'])) {
-        $txt .= "Имя пославшего: " . strip_tags(trim(urlencode($_POST['name']))) . "%0A";
+        $txt .= "Имя: " . strip_tags(trim(urlencode($_POST['name']))) . "%0A";
     }
      
     // Номер телефона
     if (isset($_POST['phone']) && !empty($_POST['phone'])) {
         $txt .= "Телефон: " . strip_tags(trim(urlencode($_POST['phone']))) . "%0A";
+    }
+    // Номер телефона
+    if (isset($_POST['message']) && !empty($_POST['message'])) {
+      $txt .= "Сообщение: " . strip_tags(trim(urlencode($_POST['message']))) . "%0A";
     }
      
     // Не забываем про тему сообщения
