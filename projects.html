@@ -31,7 +31,7 @@
                         <a href="index.html#services" class="nav--link">Услуги</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#" class="nav--link">О нас</a>
+                        <a href="about.html" class="nav--link">О нас</a>
                     </li>
                     <li class="nav__item">
                         <a href="projects.html" class="nav--link">Проекты</a>
@@ -41,6 +41,10 @@
                     </li>
                 </ul>
             </nav>
+            <div class="header__button">
+                <a href="form.html" class="header--btn" target="_blank">Оставить заявку</a>
+                <span class="header--underline"></span>
+            </div>
             <div class="header__burger">
                 <span class="left--stick stick"></span>
                 <span class="right--stick stick"></span>
@@ -59,24 +63,24 @@
                 </div>
                 <div class="projects__wrapper">
                     <div class="projects__filter">
-                        <div class="projects__item active">
+                        <div class="projects__item active proj--all" data-filter="all">
                             <p>Показать все</p>
                         </div>
-                        <div class="projects__item">
+                        <div class="projects__item proj--cyber" data-filter="cyber">
                             <p>Киберспорт</p>
                         </div>
-                        <div class="projects__item">
+                        <div class="projects__item proj--design" data-filter="design">
                             <p>Дизайн</p>
                         </div>
-                        <div class="projects__item">
+                        <div class="projects__item proj--prod" data-filter="prod">
                             <p>Продакшн</p>
                         </div>
-                        <div class="projects__item">
+                        <div class="projects__item proj--manag" data-filter="mng">
                             <p>Менеджмент</p>
                         </div>
                     </div>
                     <div class="proj__row">
-                        <div class="proj__item proj__col box">
+                        <div class="proj__item proj__col box mng--item">
                             <div class="proj__img single-box">
                                 <div class="box__content">
                                     <div class="slides slide-1" style="background-image: url(./img/ber-boom-lig.png);"></div>
@@ -98,7 +102,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="proj__item proj__col box">
+                        <div class="proj__item proj__col box cyber--item">
                             <div class="proj__img single-box">
                                 <div class="box__content">
                                     <div class="slides slide-1" style="background-image: url(./img/people-sofa.png);"></div>
@@ -119,10 +123,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!--Project ROW-->
-                    <div class="proj__row">
-                        <div class="proj__item proj__col box">
+                    
+                    
+                        <div class="proj__item proj__col box cyber--item">
                             <div class="proj__img single-box">
                                 <div class="box__content">
                                     <div class="slides slide-1" style="background-image: url(./img/champ1.png);"></div>
@@ -142,7 +145,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="proj__item proj__col box">
+                        <div class="proj__item proj__col box design--item">
                             <div class="proj__img single-box">
                                 <div class="box__content">
                                     <div class="slides slide-1" style="background-image: url(./img/champ2.png);"></div>
@@ -162,10 +165,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!--Project Row 3-->
-                    <div class="proj__row">
-                        <div class="proj__item proj__col box">
+                    
+                    
+                        <div class="proj__item proj__col box design--item">
                             <div class="proj__img single-box">
                                 <div class="box__content">
                                     <div class="slides slide-1" style="background-image: url(./img/landing-extensi.png);"></div>
@@ -185,7 +187,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="proj__item proj__col box">
+                        <div class="proj__item proj__col box prod--item">
                             <div class="proj__img single-box">
                                 <div class="box__content">
                                     <div class="slides slide-1" style="background-image: url(./img/cyber-show.png);"></div>
@@ -205,10 +207,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!--Project ROw 4-->
-                    <div class="proj__row">
-                        <div class="proj__item proj__col box">
+                    
+                        <!--Project ROw 4-->
+                    
+                        <div class="proj__item proj__col box cyber--item">
                             <div class="proj__img single-box">
                                 <div class="box__content">
                                     <div class="slides slide-1" style="background-image: url(./img/shos.png);"></div>
@@ -228,7 +230,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="proj__item proj__col box">
+                        <div class="proj__item proj__col box design--item">
                             <div class="proj__img single-box">
                                 <div class="box__content">
                                     <div class="slides slide-1" style="background-image: url(./img/landing-cup.png);"></div>
@@ -248,10 +250,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!--Project Row 5-->
-                    <div class="proj__row">
-                        <div class="proj__item proj__col box">
+                    
+                        <!--Project Row 5-->
+                    
+                        <div class="proj__item proj__col box mng--item">
                             <div class="proj__img single-box">
                                 <div class="box__content">
                                     <div class="slides slide-1" style="background-image: url(./img/vksl.png);"></div>
@@ -298,5 +300,6 @@
     </footer>
     <!--script!-->
     <script src="./js/header.js"></script>
+    <script src="./js/projFilter.js"></script>
 </body>
 </html>

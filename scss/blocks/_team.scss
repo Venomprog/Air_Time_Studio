@@ -1,0 +1,64 @@
+.team__wrapper {
+    margin-top: 87px;
+}
+.team__row {
+    display: flex;
+    gap: 70px;
+    @media (max-width:768px){
+        flex-wrap: wrap;
+    }
+}
+.team--item{
+    width: 570px;
+    @media (max-width:1370px) {
+        width: 500px;
+    }
+    .card__img{
+        img{
+            width: 100%;
+        }
+    }
+}
+.team__item-1 {
+    
+}
+.team__item--title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+.team__item--desk {
+    font-style: normal;
+    font-weight: 350;
+    font-size: 24px;
+    line-height: 30px;
+    color: #B1B1B1;
+    margin-top: 36px;
+}
+.team__item-2 {
+    
+}
+
+
+.team__card--title {
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45px;
+    color: #FFFFFF;
+}
+.team__card--subtitle {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 45px;
+    color: #A0A0A0;
+}
+
+
+.about__content-title{
+    background: linear-gradient(90.52deg, #22A1FF -5.53%, #CA1FFF 14.35%, #FFE101 60.36%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
