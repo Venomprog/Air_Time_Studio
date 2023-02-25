@@ -40,9 +40,75 @@
     font-weight: 350;
     font-size: 24px;
     line-height: 35px;
+    @media (max-width:1370px) {
+        font-size: 22px;
+    line-height: 30px;
+    }
+}
+//   TAKE OFF
+.key--take-off{
+    margin-top: 30px;
+    @media (max-width:1370px){
+        margin-top: 55px;
+    }
+}
+.hero--take-off{
+    margin-top: 20px;
+    @media (max-width:1370px) {
+        margin-top: 20px;
+    }
+    p{
+        margin-top: 20px;
+    }
+}
+.take-off__main-img{
+    margin-top: 150px;
+    img{
+        margin-top: 60px;
+        max-width: 1180px;
+        max-height: 1271px;
+    }
 }
 
 
+// take off images
+.take-off__additional-img{
+    p{
+        font-weight: 350;
+        font-size: 30px;
+        line-height: 44px;
+        color: #A0A0A0;
+    }
+    .take-off__hader-img{
+        margin-top: 65px;
+    }
+    .designing--row{
+        margin-top: 90px;
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        flex-wrap: wrap;
+    }
+}
+.take-off__links {
+    margin-top: 100px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    a{
+        background: none;
+        color: white;
+    }
+}
+.rainbow--text-take-off{
+    background: linear-gradient(90.52deg, #22A1FF -15.53%, #CA1FFF 54.35%, #FFE101 117.36%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+//
 .basic--text{
     font-weight: 350;
     font-size: 30px;
