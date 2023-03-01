@@ -144,6 +144,36 @@
     display: inline-block;
     }
 }
+
+
+.big--image-proj__main {
+    &_mg-top{
+        margin-top: 20px;
+    }
+    img{
+        max-width: 1017px;
+        max-height: 589px;
+    }
+}
+.big--image-proj__sub {
+    &_row{
+        margin-top: 20px;
+        display: flex;
+        gap: 17px;
+        img{
+            max-width: 500px;
+            max-height: 270px;
+        }
+        @media (max-width:768px) {
+            flex-wrap: wrap;
+        }
+        
+    }
+}
+.first--img {
+}
+.second--img {
+}
 //cyber student END
 .basic--text{
     font-weight: 350;
