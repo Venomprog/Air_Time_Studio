@@ -8,11 +8,15 @@
     background-size: cover;
     background-position: top -130px left 0px;
     background-repeat: no-repeat;
+    &:hover{
+        z-index: 1;
+    }
+    
 }
 
 .hero__content {
     position: relative;
-    z-index: -1;
+   
 }
 
 .hero__title {
@@ -132,6 +136,8 @@
 
 .slider--scroll-bar {
     margin-top: 190px;
+    
+    
 }
 .slider--scroll-bar__content {
     width: 35px;
@@ -139,6 +145,12 @@
     border: 1px solid #676767;
     border-radius: 30px;
     margin: 0 auto;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover{
+        border: 1px solid #FFFFFF;
+
+    }
 }
 .circle {
     padding-left: 14px;
@@ -148,6 +160,7 @@
     animation-name: slider-circle;
     animation-duration: 4s;
     animation-iteration-count: infinite;
+    
 }
 
 @keyframes slider-circle{

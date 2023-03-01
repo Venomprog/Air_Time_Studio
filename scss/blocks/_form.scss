@@ -4,7 +4,13 @@
         margin-top: 70px; 
     }
 }
-
+.form__content-title{
+    background: linear-gradient(90.52deg, #22A1FF -5.53%, #CA1FFF 14.35%, #FFE101 50.36%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .contact-form__title {
     font-weight: 400;
     font-size: 35px;
@@ -32,6 +38,8 @@
         width: 357px;
         border-bottom: 1px solid white;
         padding-bottom: 15px;
+        padding: 15px;
+        
         &:focus{
             box-shadow: 0px 5px 15px -5px white;
         }
@@ -59,6 +67,10 @@
 .contact-form__input_message {
     margin-top: 70px;
     width: 1259px;
+    padding: 15px;
+    &:focus{
+        box-shadow: 0px 5px 15px -5px white;
+    }
     @media (max-width:1370px){
         width: 1000px;
     }
@@ -82,7 +94,9 @@
 }
 
 
-
+.arrow--to-back{
+    margin-bottom: 70px;
+}
 .arrow--back-link{
     display: block;
     width: 51px;

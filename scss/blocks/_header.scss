@@ -67,7 +67,11 @@
     }
     transition: 0.3s;
 }
-
+.header__button_hidden{
+    // visibility: hidden;
+    //Если что, раскоментировать
+    opacity: 1;
+}
 .header--btn {
     font-weight: 350;
     font-size: 24px;
