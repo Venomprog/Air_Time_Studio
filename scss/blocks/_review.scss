@@ -8,9 +8,23 @@
     background-size: 100% 100%;
     background-position: top -30px left 0px;
     background-repeat: no-repeat;
+    @media (max-width:768px){
+      height: 450px;
+      margin-top: 40px;
+    }
 }
 
-
+.review__title{
+  @media (max-width:768px){
+    font-size: 42px;
+    margin-left: 30px;
+    background: linear-gradient(90.52deg, #22A1FF -5.53%, #CA1FFF 14.35%, #FFE101 50.36%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        -webkit-text-fill-color: transparent; 
+  }
+}
 .slider {
     position: relative;
     width: 1060px;
@@ -20,6 +34,9 @@
     user-select: none;
     /* Чтобы запретить скролл страницы, если мы начали двигать слайдер по оси X */
     touch-action: pan-y;
+    @media (max-width:330px){
+      width: 250px;
+    }
   }
   
   /* Если где-то внутри слайдера будут изображения,
@@ -34,11 +51,19 @@
     width: 1060px;
     height: 250px;
     overflow: hidden;
+    @media (max-width:330px){
+      height: 150px;
+      width: 250px;
+    }
     .slide--text{
         font-weight: 350;
         font-size: 24px;
         line-height: 35px;
-        color: #FFFFFF
+        color: #FFFFFF;
+        @media (max-width:330px){
+          font-size: 14px;
+          line-height: 18px;
+        }
     }
     .slide--sign{
         font-weight: 700;
@@ -46,6 +71,10 @@
         line-height: 29px;
         color: #A0A0A0;
         margin-top: 20px;
+        @media (max-width:330px){
+          font-size: 16px;
+          line-height: 18px;
+        }
     }
   }
   
@@ -76,6 +105,17 @@
     padding: 40px;
     margin-left: 30px;
     border-radius: 10px;
+    @media (max-width:330px){
+      width: 250px;
+      padding: 20px;
+      height: 150px;
+    }
+    @media (max-width:768px){
+      margin-left: 30px;
+      &:nth-child(1){
+        margin-left: 0px;
+      }
+    }
   }
   
   .slider-arrows {

@@ -8,13 +8,21 @@
     overflow: visible;
 }
 
-
 .our-clients__title {
     background: linear-gradient(90.52deg, #22A1FF -5.53%, #CA1FFF 14.35%, #FFE101 35.36%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    @media (max-width:768px){
+        font-size: 34px;
+        background: linear-gradient(90.52deg, #22A1FF -5.53%, #CA1FFF 24.35%, #FFE101 75.36%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-left: 30px;
+    }
 }
 
 .clients__wrapper {
@@ -24,6 +32,17 @@
     gap: 108px;
     flex-wrap: wrap;
     justify-content: center;
+    @media (max-width:768px){
+        gap: 40px;
+        margin-top: 20px;
+    }
+    .clints__item{
+        @media (max-width:768px){
+            img{
+                width: 90px;
+            }
+        }
+    }
 }
 
 

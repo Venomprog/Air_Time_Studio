@@ -14,6 +14,9 @@
 .connect__content {
     display: flex;
     align-items: center;
+    @media (max-width:768px){
+        flex-wrap: wrap;
+    }
 }
 
 
@@ -21,12 +24,23 @@
     font-weight: 400;
     font-size: 45px;
     line-height: 55px;
+    @media (max-width:768px){
+        font-size: 22px;
+        line-height: 28px;
+        margin-left: 20px;
+    }
 }
 .connect__desk {
     font-style: normal;
     font-weight: 350;
     font-size: 24px;
     line-height: 35px;
+    @media (max-width:768px){
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 18px;
+        margin-left: 20px;
+    }
 }
 .connect__button {
     margin-left: 220px;
@@ -46,5 +60,14 @@
     &:hover{
         opacity: 0.8;
         box-shadow: 0px 0px 5px 3px white;
+    }
+    @media (max-width:768px){
+        margin-top: 40px;
+        margin-left: 90px;
+        width: 124px;
+        height: 124px;
+        padding-top: 43px;
+        font-size: 18px;
+        line-height: 22px;
     }
 }

@@ -3,11 +3,7 @@
     background-color: #050412;
     position: fixed;
     top: 0;
-    @media (min-width:768px){
-        z-index: 999;
-        position: fixed;
-    top: 0;
-    }    
+    z-index: 99999;
 }
 .hedaer__content {
     display: flex;
@@ -20,6 +16,7 @@
     z-index: 3;
 }
 .nav{
+    z-index: 999;
     transition: all 0.7s;
     @media (max-width:768px) {
         top: -30px;
@@ -38,7 +35,7 @@
 .nav__list {
     display: flex;
     gap: 70px;
-    
+    z-index: 999;
     @media (max-width:768px) {
         display: block;
         margin-top: 70px;
@@ -52,6 +49,7 @@
     line-height: 35px;
     text-align: center;
     color: #FFFFFF;
+    z-index: 999;
     @media (max-width:768px) {
         padding-left: 0px;
         margin-top: 20px;
@@ -66,6 +64,7 @@
         color: white;
     }
     transition: 0.3s;
+    z-index: 999;
 }
 .header__button_hidden{
     // visibility: hidden;
