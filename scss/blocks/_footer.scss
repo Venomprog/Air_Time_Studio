@@ -6,6 +6,9 @@ footer{
     display: flex;
     align-items: center;
     gap: 103px;
+    @media (min-width:1900px) {
+        gap: 250px;
+    }
 }
 
 .footer__links {

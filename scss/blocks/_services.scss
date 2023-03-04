@@ -108,6 +108,18 @@
         margin-top: 32px;
     }
 }
+
+@media (min-width:1400px) and (max-width:1500px) {
+    .text--cyber {
+        margin-top: 55px;
+    }
+    .text--design{
+        margin-top: 50px;
+    }
+    .text--prod{
+        margin-top: 140px;
+    }
+}
 // спец отступы для текста в карточках услуг**
 .main__text--item {
     margin-top: 24px;

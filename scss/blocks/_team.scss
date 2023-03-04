@@ -4,8 +4,35 @@
 .team__row {
     display: flex;
     gap: 70px;
+    @media (min-width:1300px) {
+        &:nth-child(2){
+            margin-top: -150px;
+        }
+        &:nth-child(3){
+            margin-top: -150px;
+        }
+        &:nth-child(4){
+            margin-top: -150px;
+        }
+        &:nth-child(5){
+            margin-top: -150px;
+        }
+        &:nth-child(6){
+            margin-top: -150px;
+        }
+        &:nth-child(7){
+            margin-top: -150px;
+        }
+        &:nth-child(8){
+            margin-top: -150px;
+        }
+    }
+    
     @media (max-width:768px){
         flex-wrap: wrap;
+    }
+    @media (min-width:1900px) {
+        gap: 250px;
     }
 }
 .team--item{

@@ -28,6 +28,9 @@
     @media (max-width:1370px) {
         max-width: 500px;
     }
+    @media (min-width:1900px) {
+        max-width: 700px;
+    }
     .proj__img {
         img{
             max-width: 100%;
@@ -35,6 +38,9 @@
         }
     }
     .proj__text {
+        @media (min-width:1900px) {
+            height: 230px;
+        }
         background-color: #131225;
         padding-left: 36px;
         border-radius: 10px;
@@ -74,6 +80,9 @@
     width: 500px;
     height: 320px;
     perspective: 1200px;
+    @media (min-width:1900px) {
+        width: 700px;
+    }
 }
 
 .box__content{
@@ -89,6 +98,9 @@
     width: 500px;
     height: 320px;
     border-radius: 20px;
+    @media (min-width:1900px) {
+        width: 700px;
+    }
 }
 
 .slide-1{
@@ -105,6 +117,11 @@
     z-index: 1;
     opacity: 0;
     transition: all 1s;
+    background-position: -30px 0px;
+    @media (min-width:1900px) {
+        background-position: 0px 0px;
+        background-size: cover;
+    }
 }
 
 .box:hover .box__content{
