@@ -29,7 +29,7 @@
     }
     &.visible{
         top: 0px;
-        left: 10px;
+        left: -10px;
     }
 }
 .nav__list {
@@ -40,7 +40,7 @@
         display: block;
         margin-top: 70px;
         justify-content: flex-start;
-        
+        padding-left: 30px;
     }
 }
 .nav__item {

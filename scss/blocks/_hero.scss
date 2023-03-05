@@ -138,7 +138,9 @@
 .slider--scroll-bar {
     margin-top: 190px;
     
-    
+    @media (max-width:768px){
+        margin-top: 90px;
+    }
 }
 .slider--scroll-bar__content {
     width: 35px;

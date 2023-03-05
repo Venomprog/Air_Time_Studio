@@ -37,6 +37,10 @@
     @media (max-width:330px){
       width: 250px;
     }
+    @media (max-width:768px){
+      height: 200px;
+      width: 300px;
+    }
   }
   
   /* Если где-то внутри слайдера будут изображения,
@@ -51,15 +55,27 @@
     width: 1060px;
     height: 250px;
     overflow: hidden;
+    
+    @media (max-width:768px){
+      height: 200px;
+      width: 330px;
+    }
     @media (max-width:330px){
       height: 150px;
       width: 250px;
+      margin-left: 25px;
     }
+    
     .slide--text{
         font-weight: 350;
         font-size: 24px;
         line-height: 35px;
         color: #FFFFFF;
+        
+        @media (max-width:768px){
+          font-size: 16px;
+          line-height: 18px;
+        }
         @media (max-width:330px){
           font-size: 14px;
           line-height: 18px;
@@ -71,6 +87,11 @@
         line-height: 29px;
         color: #A0A0A0;
         margin-top: 20px;
+        
+        @media (max-width:768px){
+          font-size: 16px;
+          line-height: 18px;
+        }
         @media (max-width:330px){
           font-size: 16px;
           line-height: 18px;
@@ -105,16 +126,20 @@
     padding: 40px;
     margin-left: 30px;
     border-radius: 10px;
-    @media (max-width:330px){
-      width: 250px;
-      padding: 20px;
-      height: 150px;
-    }
+    
     @media (max-width:768px){
       margin-left: 30px;
       &:nth-child(1){
         margin-left: 0px;
       }
+      height: 150px;
+      width: 300px;
+      padding: 20px;
+    }
+    @media (max-width:330px){
+      width: 250px;
+      padding: 20px;
+      height: 150px;
     }
   }
   
