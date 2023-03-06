@@ -6,7 +6,7 @@
   // ID чата
 
   // Добавить новое айди : https://api.telegram.org/bot55464325501:AAFni-m9pLQF5qT92eOQPRhLTNVbV1uAjMA/getUpdates
-  const CHATID = '897616145';
+  const CHATID = '410346144'; //rudnef ilya
  
   // Массив допустимых значений типа файла.
   $types = array('image/gif', 'image/png', 'image/jpeg', 'application/pdf');

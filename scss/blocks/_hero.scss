@@ -1,10 +1,7 @@
 .section__hero {
     padding-top: 100px;
     z-index: -1;
-    @media (max-width:768px){
-        padding-top: 0px;
-        z-index: -1;
-    }
+    
     background-image: url('/img/back-light.png');
     background-size: cover;
     background-position: top -130px left 0px;
@@ -12,7 +9,33 @@
     &:hover{
         z-index: 1;
     }
-    
+    .hero__content_button{
+        display: none;
+    }
+    @media (max-width:768px){
+        padding-top: 50px;
+        z-index: -1;
+        background-position: top -50px left 0px;
+        padding-bottom: 50px;
+        .hero__content_button{
+            display: block;
+            max-width: 250px;
+           
+        }
+        .connecting__button{
+            margin: 0 auto;
+            margin-top: 50px;
+            &_link{
+                
+                color: white;
+                font-weight: 350;
+                font-size: 22px;
+                padding: 10px 40px;
+                border: 1px solid white;
+                border-radius: 10px;
+            }
+        }
+    }
 }
 
 .hero__content {
@@ -30,9 +53,19 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     @media (max-width:768px){
-        font-size: 18px;
+        font-size: 24px;
         line-height: 30px;
         z-index: -1;
+        background: linear-gradient(90.52deg, #22A1FF 15.53%, #CA1FFF 45.35%, #FFE101 80.36%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+    @media (max-width:400px){
+        font-size: 22px;
+        line-height: 36px;
+        
     }
 }
 // .rainbow--text-hero{
@@ -52,9 +85,14 @@
     line-height: 150px;
     color: #FFFFFF;
     @media (max-width:768px){
+        font-size: 70px;
+        line-height: 60px;
+        margin-top: 30px;
+    }
+    @media (max-width:400px){
         font-size: 50px;
-        line-height: 50px;
-        margin-top: 10px;
+        line-height: 60px;
+        margin-top: 30px;
     }
 }
 .hero__subtitle {
@@ -65,7 +103,7 @@
     line-height: 30px;
     color: #B1B1B1;
     @media (max-width:768px){
-        font-size: 14px;
+        font-size: 22px;
         line-height: 22px;
         margin-top: 10px;
     }
@@ -140,6 +178,7 @@
     
     @media (max-width:768px){
         margin-top: 90px;
+        display: none;
     }
 }
 .slider--scroll-bar__content {
