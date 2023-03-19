@@ -50,20 +50,31 @@
     text-align: center;
     color: #FFFFFF;
     z-index: 999;
+    transition: 0.5s;
     @media (max-width:768px) {
         padding-left: 0px;
         margin-top: 20px;
         color: white;
         text-align: start;
     }
-    
+    &:hover{
+        a{
+            background: linear-gradient(90.52deg, #22A1FF -5.53%, #CA1FFF 30.35%, #FFE101 90.36%);
+            background-clip: border-box;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: rgba(0,0,0,0);
+            background-clip: text;
+            -webkit-text-fill-color: rgba(0,0,0,0);
+        }
+    }
 }
 .nav--link {
     color: #FFFFFF;
+    transition: 0.5s;
     @media (max-width:768px) {
         color: white;
     }
-    transition: 0.3s;
+    transition: 0.5s;
     z-index: 999;
 }
 .header__button_hidden{
@@ -129,4 +140,21 @@
 .third--stick{
     margin-top: 5px;
     transition: all 0.7s;
+}
+
+
+.header__button{
+
+    &--desktop{
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+    &--mobile{
+        display: none;
+        @media (max-width: 768px) {
+            display: block;
+            margin-top: 20px;
+        }
+    }
 }

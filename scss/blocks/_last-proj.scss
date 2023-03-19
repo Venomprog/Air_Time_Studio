@@ -13,6 +13,14 @@
         -webkit-text-fill-color: transparent;
         background-clip: text;
         -webkit-text-fill-color: transparent;
+        @media (min-width: 1600px) {
+            background: linear-gradient(90.52deg, #22A1FF -5.53%, #CA1FFF 14.35%, #FFE101 40.36%);
+            background-clip: border-box;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: rgba(0,0,0,0);
+            background-clip: text;
+            -webkit-text-fill-color: rgba(0,0,0,0);
+        }
         @media (max-width:768px){
             background: linear-gradient(90.52deg, #22A1FF -5.53%, #CA1FFF 24.35%, #FFE101 90.36%);
         -webkit-background-clip: text;
@@ -39,11 +47,11 @@
         gap: 200px;
     }
     @media (max-width:768px){
-        padding-left: 45px;
+        padding-left: 30px;
         margin-top: 50px;
     }
     @media (max-width:400px){
-        padding-left: 55px;
+        padding-left: 30px;
         margin-top: 50px;
     }
     @media (max-width:380px){
@@ -58,11 +66,14 @@
     
     max-width: 570px;
     border-radius: 10px;
+    @media (min-width: 1600px) {
+        max-width: 650px;
+    }
     @media (max-width:1370px) {
         max-width: 500px;
     }
     @media (min-width:1900px) {
-        max-width: 600px;
+        max-width: 650px;
     }
     @media (max-width:768px){
         width: 250px;  
@@ -151,7 +162,7 @@
     height: 320px;
     perspective: 1200px;
     @media (min-width:1900px) {
-        width: 600px;
+        width: 650px;
     }
     @media (max-width:768px){
         width: 350px;
@@ -180,7 +191,7 @@
     height: 320px;
     border-radius: 20px;
     @media (min-width:1900px) {
-        width: 600px;
+        width: 650px;
     }
     @media (max-width:768px){
         width: 350px;

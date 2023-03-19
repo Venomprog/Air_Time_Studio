@@ -32,9 +32,13 @@
     gap: 108px;
     flex-wrap: wrap;
     justify-content: center;
+    margin-left: 10px;
     @media (max-width:768px){
         gap: 40px;
         margin-top: 20px;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        justify-content: space-between;
     }
     .clints__item{
         @media (max-width:768px){

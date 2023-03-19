@@ -19,6 +19,14 @@
 }
 
 .services__title{
+    @media (min-width: 1600px) {
+        background: linear-gradient(90.52deg, #22A1FF -2.53%, #CA1FFF 4.35%, #FFE101 15.36%);
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: rgba(0,0,0,0);
+        background-clip: text;
+        -webkit-text-fill-color: rgba(0,0,0,0);
+    }
     @media (max-width:768px){
         background: linear-gradient(90.52deg, #22A1FF -5.53%, #CA1FFF 14.35%, #FFE101 40.36%);
         background: linear-gradient(90.52deg, #22A1FF -5.53%, #CA1FFF 14.35%, #FFE101 40.36%);

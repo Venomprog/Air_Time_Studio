@@ -2,14 +2,14 @@
     margin-top: 140px;
     padding-top: 50px;
     padding-bottom: 90px;
-    height: 670px;
+    height: 900px;
     background-image: url('/img/back-light.png');
     background-size: cover;
-    background-size: 100% 100%;
-    background-position: top -30px left 0px;
-    background-repeat: no-repeat;
+    background-size: 100% 110%;
+    background-position: top 0px left 0px;
+    background-repeat: repeat;
     @media (max-width:768px){
-      height: 450px;
+      height: 500px;
       margin-top: 40px;
     }
 }
@@ -28,7 +28,7 @@
 .slider {
     position: relative;
     width: 1060px;
-    height: 200px;
+    height: 300px;
     margin: 50px auto 0;
     /* Чтобы во время перетаскивания слайда ничего не выделить внутри него */
     user-select: none;
@@ -36,9 +36,10 @@
     touch-action: pan-y;
     @media (max-width:330px){
       width: 250px;
+      height: 300px;
     }
     @media (max-width:768px){
-      height: 200px;
+      height: 300px;
       width: 300px;
     }
   }
@@ -53,15 +54,15 @@
   
   .slider-list {
     width: 1060px;
-    height: 250px;
+    height: 500px;
     overflow: hidden;
     
     @media (max-width:768px){
-      height: 200px;
+      height: 300px;
       width: 330px;
     }
     @media (max-width:330px){
-      height: 150px;
+      height: 300px;
       width: 250px;
       margin-left: 25px;
     }
@@ -86,7 +87,6 @@
         font-size: 20px;
         line-height: 29px;
         color: #A0A0A0;
-        margin-top: 20px;
         
         @media (max-width:768px){
           font-size: 16px;
@@ -113,7 +113,7 @@
   
   .slide {
     width: 500px;
-    height: 250px;
+    height: 500px;
     /* Чтобы слайды не сжимались */
     flex-shrink: 0;
     /* Увеличиваем и центрируем цифру внутри слайда */
@@ -127,19 +127,22 @@
     margin-left: 30px;
     border-radius: 10px;
     
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     @media (max-width:768px){
       margin-left: 30px;
       &:nth-child(1){
         margin-left: 0px;
       }
-      height: 150px;
+      height: 300px;
       width: 300px;
       padding: 20px;
     }
     @media (max-width:330px){
       width: 250px;
       padding: 20px;
-      height: 150px;
+      height: 300px;
     }
   }
   
