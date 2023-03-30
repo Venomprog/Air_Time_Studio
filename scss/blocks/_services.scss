@@ -16,6 +16,13 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @media (max-width: 768px) {
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 42px;
+        line-height: 46px;
+    }
 }
 
 .services__title{
