@@ -48,48 +48,48 @@ let slider = document.querySelector('.slider'),
     document.addEventListener('mousemove', swipeAction);
     document.addEventListener('mouseup', swipeEnd);
   },
-  swipeAction = function() {
-    let evt = getEvent(),
-      // для более красивой записи возьмем в переменную текущее свойство transform
-      style = sliderTrack.style.transform,
-      // считываем трансформацию с помощью регулярного выражения и сразу превращаем в число
-      transform = +style.match(trfRegExp)[0];
+  // swipeAction = function() {
+  //   let evt = getEvent(),
+  //     // для более красивой записи возьмем в переменную текущее свойство transform
+  //     style = sliderTrack.style.transform,
+  //     // считываем трансформацию с помощью регулярного выражения и сразу превращаем в число
+  //     transform = +style.match(trfRegExp)[0];
   
-    posX2 = posX1 - evt.clientX;
-    posX1 = evt.clientX;
+  //   posX2 = posX1 - evt.clientX;
+  //   posX1 = evt.clientX;
   
-    sliderTrack.style.transform = `translate3d(${transform - posX2}px, 0px, 0px)`;
-    // можно было бы использовать метод строк .replace():
-    // sliderTrack.style.transform = style.replace(trfRegExp, match => match - posX2);
-    // но в дальнейшем нам нужна будет текущая трансформация в переменной
-  }
+  //   sliderTrack.style.transform = `translate3d(${transform - posX2}px, 0px, 0px)`;
+  //   // можно было бы использовать метод строк .replace():
+  //   // sliderTrack.style.transform = style.replace(trfRegExp, match => match - posX2);
+  //   // но в дальнейшем нам нужна будет текущая трансформация в переменной
+  // }
 
-  swipeEnd = function() {
-    // финальная позиция курсора
-    posFinal = posInit - posX1;
+  // swipeEnd = function() {
+  //   // финальная позиция курсора
+  //   posFinal = posInit - posX1;
   
-    document.removeEventListener('touchmove', swipeAction);
-    document.removeEventListener('mousemove', swipeAction);
-    document.removeEventListener('touchend', swipeEnd);
-    document.removeEventListener('mouseup', swipeEnd);
+  //   document.removeEventListener('touchmove', swipeAction);
+  //   document.removeEventListener('mousemove', swipeAction);
+  //   document.removeEventListener('touchend', swipeEnd);
+  //   document.removeEventListener('mouseup', swipeEnd);
   
-    // убираем знак минус и сравниваем с порогом сдвига слайда
-    if (Math.abs(posFinal) > posThreshold) {
-      // если мы тянули вправо, то уменьшаем номер текущего слайда
-      if (posInit < posX1) {
-        slideIndex--;
-      // если мы тянули влево, то увеличиваем номер текущего слайда
-      } else if (posInit > posX1) {
-        slideIndex++;
-      }
-    }
+  //   // убираем знак минус и сравниваем с порогом сдвига слайда
+  //   if (Math.abs(posFinal) > posThreshold) {
+  //     // если мы тянули вправо, то уменьшаем номер текущего слайда
+  //     if (posInit < posX1) {
+  //       slideIndex--;
+  //     // если мы тянули влево, то увеличиваем номер текущего слайда
+  //     } else if (posInit > posX1) {
+  //       slideIndex++;
+  //     }
+  //   }
   
-    // если курсор двигался, то запускаем функцию переключения слайдов
-    if (posInit !== posX1) {
-      slide();
-    }
+  //   // если курсор двигался, то запускаем функцию переключения слайдов
+  //   if (posInit !== posX1) {
+  //     slide();
+  //   }
   
-  };
+  // };
 
 
   arrows.addEventListener('click', function() {

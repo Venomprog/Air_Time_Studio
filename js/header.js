@@ -22,12 +22,17 @@ document.addEventListener('DOMContentLoaded', () =>{
         if (countBurger == 0){
             nav.classList.add('visible');
             burgerBtn.classList.add('active');
-            mainHtml.classList.add('none-visible');
+            if (mainHtml){
+                mainHtml.classList.add('none-visible');
+            }
             countBurger++;
         } else {
             nav.classList.remove('visible');
             burgerBtn.classList.remove('active');
-            mainHtml.classList.remove('none-visible');
+            if (mainHtml){
+                mainHtml.classList.remove('none-visible');
+            }
+            
             countBurger--;
         }
     }

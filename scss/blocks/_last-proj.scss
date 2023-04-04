@@ -276,6 +276,12 @@
     line-height: 44px;
     text-align: center;
     color: #A0A0A0;
+
+    @media (max-width: 768px) {
+        overflow-y: scroll;
+        font-size: 16px;
+        line-height: 20px;
+    }
 }
 .projects__item {
     padding-left: 30px;

@@ -110,6 +110,12 @@
         margin-top: 60px;
         max-width: 1180px;
         max-height: 1271px;
+
+        @media (max-width: 768px) {
+            margin-top: 20px;
+            max-width: 100%;
+            max-height: 1271px;
+        }
     }
 }
 
@@ -124,6 +130,20 @@
     }
     .take-off__hader-img{
         margin-top: 65px;
+        p{
+            @media (max-width: 768px){
+                padding-left: 30px;
+            }
+        }
+        img{
+
+            @media (max-width: 768px) {
+                margin-top: 20px;
+                padding-left: 30px;
+                max-width: 90%;
+                max-height: 1271px;
+            }
+        }
     }
     .designing--row{
         margin-top: 90px;
@@ -141,6 +161,11 @@
     a{
         background: none;
         color: white;
+    }
+
+    @media (max-width: 768px) {
+        padding-left: 30px;
+        margin-bottom: 100px;
     }
 }
 .rainbow--text-take-off{
@@ -161,6 +186,11 @@
         img{
             width: 100%;
             height: 100%;
+        }
+        @media (max-width: 768px) {
+            padding-left: 40px;
+            width: 90%;
+            height: auto;
         }
     }
 }
@@ -183,12 +213,16 @@
 
 
 .big--image-proj__main {
+    margin-top: 30px;
     &_mg-top{
         margin-top: 20px;
     }
     img{
         max-width: 1017px;
         max-height: 589px;
+    }
+    @media (max-width: 768px) {
+        margin-bottom: 100px;
     }
 }
 .big--image-proj__sub {
@@ -414,6 +448,21 @@
             width: 230px;
             height: 230px;
             margin-left: calc(20vw);
+        }
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    .take-off__pattern-img{
+        width: 90%;
+        padding-left: 30px;
+    }
+    .designing-col{
+        p{
+            padding-left: 30px;
         }
     }
 }
