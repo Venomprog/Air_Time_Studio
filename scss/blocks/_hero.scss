@@ -1,6 +1,7 @@
 .section__hero {
     padding-top: 100px;
     z-index: -1;
+    margin-bottom: 200px;
     
     background-image: url('/img/back-light.png');
     background-size: cover;
@@ -23,7 +24,7 @@
         }
         .connecting__button{
             margin: 0 auto;
-            margin-top: 50px;
+            margin-top: 250px;
             &_link{
                 
                 color: white;
