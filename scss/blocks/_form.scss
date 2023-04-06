@@ -19,6 +19,11 @@
     color: #FFFFFF;
 }
 
+.contact-form{
+    @media (max-width: 768px){
+        padding-left: 30px;
+    }
+}
 .contact-form__input {
     background-color: #050412;
     color: white;
@@ -74,6 +79,9 @@
     @media (max-width:1370px){
         width: 1000px;
     }
+    @media (max-width: 768px){
+        width: 80%;
+    }
 }
 
 .contact-form__button {
@@ -96,6 +104,9 @@
 
 .arrow--to-back{
     margin-bottom: 70px;
+    @media (max-width:768px){
+        padding-left: 30px;
+    }
 }
 .arrow--back-link{
     display: block;

@@ -151,6 +151,12 @@
     }
     
 }
+@media (min-width:1700px){
+    .text--cyber{
+
+        margin-top: 84px;
+    }
+}
 .text--design {
     margin-top: 83px;
     @media (max-width:768px){
@@ -247,6 +253,10 @@
     @media (max-width:768px){
         margin-top: 14px; 
     }
+    @media (min-width: 1700px){
+        font-size: 22px;
+        line-height: 24px; 
+    }
 }
 .item__button {
     margin-left: 20px;
@@ -292,5 +302,10 @@
 
 
 
-
+.services__title{
+    @media (max-width: 768px) {
+        
+        margin-left: 0px;
+    }
+}
 
