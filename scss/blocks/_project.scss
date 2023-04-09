@@ -122,6 +122,9 @@
 
 // take off images
 .take-off__additional-img{
+    @media (max-width: 768px){
+        margin-top: 150px;
+    }
     p{
         font-weight: 350;
         font-size: 30px;
@@ -195,6 +198,12 @@
     }
 }
 
+
+.extenci--desktop-img{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
 //ETENCI END
 //cyberstudent
 .cyber-student--project{
@@ -252,7 +261,8 @@
         font-size: 18px;
         line-height: 24px;
         width: 100%;
-        padding: 30px;
+        padding: 0px 30px;
+        margin-bottom: 100px;
     }
 }
 

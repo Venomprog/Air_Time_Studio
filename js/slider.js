@@ -43,10 +43,10 @@ let slider = document.querySelector('.slider'),
     sliderTrack.style.transition = '';
   
     // и сразу начинаем отслеживать другие события на документе
-    document.addEventListener('touchmove', swipeAction);
-    document.addEventListener('touchend', swipeEnd);
-    document.addEventListener('mousemove', swipeAction);
-    document.addEventListener('mouseup', swipeEnd);
+    // document.addEventListener('touchmove', swipeAction);
+    // document.addEventListener('touchend', swipeEnd);
+    // document.addEventListener('mousemove', swipeAction);
+    // document.addEventListener('mouseup', swipeEnd);
   },
   // swipeAction = function() {
   //   let evt = getEvent(),
