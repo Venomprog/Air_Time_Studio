@@ -118,3 +118,47 @@
         box-shadow: 0px 0px 5px 3px white;
     }
 }
+
+
+.modal-success{
+    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #050412;
+    border: 1px solid #F8F8F8;
+    border-radius: 5px;
+    padding: 62px 0px 57px;
+    width: 770px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    display: none;
+    &__logo{
+        margin-bottom: 23px
+    }
+    &__text{
+        margin-bottom: 42px;
+        font-weight: 350;
+        font-size: 30px;
+        line-height: 44px;
+        color: #FFFFFF;
+    }
+    &__button{
+        background: #050412;
+        border: 1px solid #FFFFFF;
+        border-radius: 5px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 255px;
+        height: 55px;
+
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 35px;
+        color: white;
+    }
+}
